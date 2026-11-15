@@ -1,0 +1,26 @@
+{
+    "name": "Simple",
+    "description": "A calm, simple look for Prism: soft corners, quiet colors that follow your light or dark theme, one gentle accent.",
+    "version": "1.0.0",
+    "authors": [
+        "Prism Addons"
+    ],
+    "prism": ">=11",
+    "settings": [
+        {
+            "key": "accent",
+            "type": "color",
+            "label": "Accent",
+            "default": "#ff6b8f71"
+        },
+        {
+            "key": "radius",
+            "type": "integer",
+            "label": "Corner radius",
+            "default": 8,
+            "min": 0,
+            "max": 16
+        }
+    ],
+    "icon": "icon.png"
+}
