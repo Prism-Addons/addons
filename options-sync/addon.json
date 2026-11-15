@@ -1,0 +1,17 @@
+{
+    "name": "Options Sync",
+    "version": "1.0.0",
+    "authors": ["Prism Addons"],
+    "description": "Carries your Minecraft options (keybinds, video, sound, server list) over to new instances and new versions, so you never set everything up again.",
+    "icon": "icon.png",
+    "prism": ">=11",
+    "settings": [
+        {"key": "mode", "type": "choice", "label": "When", "default": "missing", "options": [
+            {"value": "missing", "label": "Only instances without options yet"},
+            {"value": "always", "label": "Every launch, merged into existing options"}
+        ]},
+        {"key": "keep", "type": "string", "label": "Never sync these keys", "default": "resourcePacks,incompatibleResourcePacks,lastServer", "description": "comma separated options.txt keys that stay per instance"},
+        {"key": "files", "type": "string", "label": "Also copy these files when missing", "default": "servers.dat,optionsof.txt,optionsshaders.txt"},
+        {"key": "notify", "type": "bool", "label": "Show a message when options were carried over", "default": true}
+    ]
+}
